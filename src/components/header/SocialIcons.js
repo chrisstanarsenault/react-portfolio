@@ -7,10 +7,10 @@ export default class SocialIcons extends Component {
   render() {
     return (
       <Container>
-        <SocIcons className="fab fa-twitter"></SocIcons>
-        <SocIcons className="fab fa-linkedin"></SocIcons>
-        <SocIcons className="fab fa-github"></SocIcons>
-        <SocIcons className="fas fa-envelope"></SocIcons>
+        <SocialLink href="https://www.twitter.com/mynameischrisa"><SocialIcon className="fab fa-twitter"></SocialIcon></SocialLink>
+        <SocialLink href="https://www.linkedin/in/chrisstanarsenault"><SocialIcon className="fab fa-linkedin"></SocialIcon></SocialLink>
+        <SocialLink href="https://www.github.com/chrisstanarsenault"><SocialIcon className="fab fa-github"></SocialIcon></SocialLink>
+        <SocialLink href="mailto: chrisstanarsenault@gmail.com"><SocialIcon className="fas fa-envelope"></SocialIcon></SocialLink>
       </Container>
     )
   }
@@ -22,9 +22,14 @@ const Container = styled.div`
   margin-top: 1rem;
 `;
 
+const SocialLink = styled.a`
+  text-decoration: none;
+  color: white;
+`;
 
-const SocIcons = styled.i`
-  font-size: 2rem;
+
+const SocialIcon = styled.i`
+  font-size: 2.4rem;
   padding-right: 2rem;
   transition: all .2s ease-in;
   cursor: pointer;
@@ -33,5 +38,6 @@ const SocIcons = styled.i`
   :hover {
     color: ${bosYellow};
     transform: scale(1.1);
+    ;
   }
 `;

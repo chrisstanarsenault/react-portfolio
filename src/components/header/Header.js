@@ -64,17 +64,41 @@ const Title = styled.h3`
 `;
 
 const Resume = styled.div`
-  margin-top: 1rem;
+  margin-top: 3rem;
   border: 2px solid ${bosYellow};
-  padding: 1rem;
+  padding: 1.5rem;
 `;
 
 const ResumeLinks = styled.a`
+  position: relative;
   text-decoration: none;
   color: white;
   transition: all .3s ease-in;
+  font-size: 1.5rem;
+    
+    :before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: ${bosYellow};
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+      transition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+      }
 
-  :hover {
-    color: ${bosYellow};
+    :hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+    :hover {
+      color: ${bosYellow};
+    }
   }
 `;
