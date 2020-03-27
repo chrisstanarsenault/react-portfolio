@@ -66,6 +66,7 @@ const Title = styled.h3`
 const Resume = styled.div`
   margin-top: 3rem;
   border: 2px solid ${bosYellow};
+  border-radius: 5px;
   padding: 1.5rem;
 `;
 
