@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import images from '../../assets';
 
-export default class Project extends Component {
-  render() {
+export default function Project(props) {
+  
     return (
       <Container>
-        <h3>{this.props.projects[0].name}</h3>
-        <ProjectContainer image = {images[this.props.projects[0].image]}>
+        <h3>{props.projects[0].name}</h3>
+        <ProjectContainer image = {images[props.projects[0].image]}>
           <TechStackIconsContainer />
         </ProjectContainer>
-        <p>{this.props.projects[0].info}</p>
+        <p>{props.projects[0].info}</p>
       </Container>
     )
   }
-}
+
 
 const Container = styled.div`
     border: 1px solid black;

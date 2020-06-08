@@ -1,22 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import TorontoWall from '../../images/toronto-wall.jpg';
 
 import Project from './Project';
 
-const projects = [
-  {
-    name: "World Legal Summit",
-    image: "torontoWall",
-    liveLink: "https://worldlegalsummit.org",
-    githubLink: "none",
-    info: "A site built for the World Legal Summit. Check them out and get involved!",
-  }
-]
 
-export default class Projects extends Component {
-  render() {
+
+export default function Projects() {
+
+  const projects = [
+    {
+      name: "World Legal Summit",
+      image: "torontoWall",
+      liveLink: "https://worldlegalsummit.org",
+      githubLink: "none",
+      info: "A site built for the World Legal Summit. Check them out and get involved!",
+    }
+  ]
+  
     return (
       <div>
         <h2>Projects</h2>
@@ -28,4 +30,3 @@ export default class Projects extends Component {
       
     )
   }
-}

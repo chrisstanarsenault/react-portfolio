@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import About from "./About";
@@ -7,8 +7,8 @@ import Projects from "./Projects";
 import { blueGreen } from '../../util/sharedStyles';
 
 
-export default class Main extends Component {
-  render() {
+export default function Main() {
+  
     return (
       <Wrapper>
         <About />
@@ -16,7 +16,7 @@ export default class Main extends Component {
       </Wrapper>
     )
   }
-}
+
 
 const Wrapper = styled.div`
   width: 65%;

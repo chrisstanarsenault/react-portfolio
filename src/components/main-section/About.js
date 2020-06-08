@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from "styled-components";
 
 import { bosYellow, rockSalt } from "../../util/sharedStyles";
 
-export default class About extends Component {
-  render() {
+export default function About() {
+  
     return (
       <Container>
         <Name>Chris Arsenault</Name>
@@ -12,7 +12,7 @@ export default class About extends Component {
       </Container>
     )
   }
-}
+
 
 const Container = styled.div`
   max-width: 75%;

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { bosYellow } from '../../util/sharedStyles';
 
-export default class SocialIcons extends Component {
-  render() {
+export default function SocialIcons() {
+  
     return (
       <Container>
         <SocialLink href="https://www.twitter.com/mynameischrisa"><SocialIcon className="fab fa-twitter"></SocialIcon></SocialLink>
@@ -14,7 +14,7 @@ export default class SocialIcons extends Component {
       </Container>
     )
   }
-}
+
 
 const Container = styled.div`
   display: flex;

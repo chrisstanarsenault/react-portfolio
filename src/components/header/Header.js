@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from "styled-components"; 
 
 import SocialIcons from './SocialIcons';
@@ -9,8 +9,7 @@ import resume from '../../download/Chris_Resume.pdf';
 import { bosYellow, rockSalt } from '../../util/sharedStyles';
 
 
-export default class Header extends Component {
-  render() {
+export default function Header() {
     return (
       <Wrapper>
         <Container>
@@ -22,7 +21,6 @@ export default class Header extends Component {
       </Wrapper>
     )
   }
-}
 
 const Wrapper = styled.div`
   background-image: url(${backgroundImage});
