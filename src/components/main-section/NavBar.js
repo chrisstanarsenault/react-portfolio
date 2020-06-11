@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 import { bosYellow, mustardYellow } from '../../util/sharedStyles';
 
@@ -7,15 +8,15 @@ export default function NavBar() {
   return (
     <div>
       <NavContainer>
-        <Links href="#">
+        <Link to="about" spy={true} duration={500}>
           <NavItem>About</NavItem>
-        </Links>
-        <Links href="#">
+        </Link>
+        <Link to="projects" spy={true} duration={500}>
           <NavItem>Projects</NavItem>
-        </Links>
-        <Links href="#">
+        </Link>
+        <Link to="contact" spy={true} duration={500}>
           <NavItem>Contact</NavItem>
-        </Links>
+        </Link>
       </NavContainer>
     </div>
   );

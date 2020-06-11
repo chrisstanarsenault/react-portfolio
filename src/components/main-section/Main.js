@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import About from './About';
 import Projects from './Projects';
 import NavBar from './NavBar';
+import Contact from './Contact';
 
 export default function Main() {
   return (
@@ -11,6 +12,7 @@ export default function Main() {
       <NavBar />
       <About />
       <Projects />
+      <Contact />
     </Wrapper>
   );
 }

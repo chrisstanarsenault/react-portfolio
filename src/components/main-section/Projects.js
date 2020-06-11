@@ -68,7 +68,7 @@ export default function Projects() {
   ];
 
   return (
-    <div>
+    <div id="projects">
       <h2> Projects </h2>{' '}
       <p> Take a look through some of the projects I have done </p>{' '}
       <Project projects={projects} />{' '}

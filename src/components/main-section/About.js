@@ -1,18 +1,20 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { bosYellow, rockSalt } from "../../util/sharedStyles";
+import { bosYellow, rockSalt } from '../../util/sharedStyles';
 
 export default function About() {
-  
-    return (
-      <Container>
-        <Name>Chris Arsenault</Name>
-        <AboutParagraph>Hi there!  I am Chris Arsenault, a full stack developer from Toronto, Ontario, with a passion for all things front-end. I am extremely motivated and driven to grow my knowledge and skills in web development.</AboutParagraph>
-      </Container>
-    )
-  }
-
+  return (
+    <Container id="about">
+      <Name>Chris Arsenault</Name>
+      <AboutParagraph>
+        Hi there! I am Chris Arsenault, a full stack developer from Toronto,
+        Ontario, with a passion for all things front-end. I am extremely
+        motivated and driven to grow my knowledge and skills in web development.
+      </AboutParagraph>
+    </Container>
+  );
+}
 
 const Container = styled.div`
   max-width: 75%;
