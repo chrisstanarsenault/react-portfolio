@@ -1,0 +1,79 @@
+@import "../sharedStyles.scss";
+
+section {
+  background-image: url("../../images/toronto-wall.jpg");
+  background-attachment: fixed;
+  background-size: 35% 100%;
+  height: 100vh;
+  width: 35%;
+  position: fixed;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(68, 68, 68, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+  & h2 {
+    padding-top: 10.5rem;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    text-shadow: 2px 2px 6px #00000047;
+    letter-spacing: 2px;
+
+    & span {
+      color: $bosYellow;
+    }
+  }
+
+  & h3 {
+    font-family: $rockSalt;
+    font-size: 2rem;
+    text-shadow: 2px 2px 6px #00000047;
+  }
+
+  & div.resume-container {
+    margin-top: 3rem;
+    border: 2px solid $bosYellow;
+    border-radius: 5px;
+    padding: 1.5rem;
+
+    & a.resume-links {
+      position: relative;
+      text-decoration: none;
+      color: white;
+      transition: all .3s ease-in;
+      font-size: 1.5rem;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: $bosYellow;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all .5s cubic-bezier(1, .25, 0, .75) 0s;
+        transition: all .5s cubic-bezier(1, .25, 0, .75) 0s;
+      }
+
+      &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+
+      &:hover {
+        color: $bosYellow;
+      }
+    }
+  }
+}
