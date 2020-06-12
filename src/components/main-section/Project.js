@@ -7,7 +7,7 @@ import { projectImages, projectDevIcons } from '../../util/assets';
 
 export default function Project(props) {
   return (
-    <Fragment id="projects">
+    <Fragment>
       {props.projects.map((project, index) => (
         <Container key={`container: ` + index}>
           <h3>{project.name}</h3>

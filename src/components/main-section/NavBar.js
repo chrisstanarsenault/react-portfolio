@@ -8,13 +8,31 @@ export default function NavBar() {
   return (
     <div>
       <NavContainer>
-        <Link to="about" spy={true} duration={500}>
+        <Link
+          to="about"
+          spy={true}
+          duration={500}
+          smooth={true}
+          activeClass="active"
+        >
           <NavItem>About</NavItem>
         </Link>
-        <Link to="projects" spy={true} duration={500}>
+        <Link
+          to="projects"
+          spy={true}
+          duration={500}
+          smooth={true}
+          activeClass="active"
+        >
           <NavItem>Projects</NavItem>
         </Link>
-        <Link to="contact" spy={true} duration={500}>
+        <Link
+          to="contact"
+          spy={true}
+          duration={500}
+          smooth={true}
+          activeClass="active"
+        >
           <NavItem>Contact</NavItem>
         </Link>
       </NavContainer>
@@ -32,7 +50,7 @@ const NavItem = styled.li`
   padding: 10px 20px;
   position: relative;
   text-decoration: none;
-  color: ${bosYellow};
+  color: ${(props) => (props.active ? mustardYellow : bosYellow)};
   transition: all 0.3s ease-in;
   font-size: 1.5rem;
   font-weight: bold;
