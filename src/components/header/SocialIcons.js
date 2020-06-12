@@ -1,43 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
 
-import { bosYellow } from '../../util/sharedStyles';
+import '../../styles/header/SocialIcons.scss';
 
 export default function SocialIcons() {
-  
-    return (
-      <Container>
-        <SocialLink href="https://www.twitter.com/mynameischrisa"><SocialIcon className="fab fa-twitter"></SocialIcon></SocialLink>
-        <SocialLink href="https://www.linkedin/in/chrisstanarsenault"><SocialIcon className="fab fa-linkedin"></SocialIcon></SocialLink>
-        <SocialLink href="https://www.github.com/chrisstanarsenault"><SocialIcon className="fab fa-github"></SocialIcon></SocialLink>
-        <SocialLink href="mailto: chrisstanarsenault@gmail.com"><SocialIcon className="fas fa-envelope"></SocialIcon></SocialLink>
-      </Container>
-    )
-  }
-
-
-const Container = styled.div`
-  display: flex;
-  height: 3rem;
-  margin-top: 1rem;
-`;
-
-const SocialLink = styled.a`
-  text-decoration: none;
-  color: white;
-`;
-
-
-const SocialIcon = styled.i`
-  font-size: 2.4rem;
-  padding-right: 2rem;
-  transition: all .2s ease-in;
-  cursor: pointer;
-  
-
-  :hover {
-    color: ${bosYellow};
-    transform: scale(1.1);
-    ;
-  }
-`;
+  return (
+    <div className="social-icons-container">
+      <a href="https://www.twitter.com/mynameischrisa">
+        <i className="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin/in/chrisstanarsenault">
+        <i className="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.github.com/chrisstanarsenault">
+        <i className="fab fa-github"></i>
+      </a>
+      <a href="mailto: chrisstanarsenault@gmail.com">
+        <i className="fas fa-envelope"></i>
+      </a>
+    </div>
+  );
+}
