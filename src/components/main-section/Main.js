@@ -6,6 +6,7 @@ import About from './About';
 import Projects from './Projects';
 import NavBar from './NavBar';
 import Contact from './Contact';
+import ButtonToTop from './ButtonToTop';
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
       <About />
       <Projects />
       <Contact />
+      <ButtonToTop />
     </div>
   );
 }
