@@ -1,0 +1,7 @@
+@import "./sharedStyles.scss";
+
+div.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: $raleway;
+}

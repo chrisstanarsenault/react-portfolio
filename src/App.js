@@ -1,24 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import Header from './components/header/Header';
 import Main from './components/main-section/Main';
 
-import { raleway } from './util/sharedStyles';
+import './styles/App.scss';
 
 function App() {
   return (
-    <MainContainer>
+    <div className="app-container">
       <Header />
       <Main />
-    </MainContainer>
+    </div>
   );
 }
 
 export default App;
-
-const MainContainer = styled.div`
-  display: flex;
-  height: 100vh;
-  font-family: ${raleway}
-`;
